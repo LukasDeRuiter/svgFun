@@ -29,3 +29,15 @@ stroke-width: 20}
         stroke-width: 15;}
     
 }
+
+.svgexample1:hover .poly1,
+.svgexample1:hover .poly2,
+.svgexample1:hover .poly3,
+.svgexample1:hover .poly4 {
+    animation: changeColor ease-in-out infinite 5000ms;
+}
+
+@keyframes changeColor{
+    0%{filter:hue-rotate(0deg)}
+    100%{filter:hue-rotate(360deg)}
+}
