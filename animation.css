@@ -1,13 +1,31 @@
-.svgexample1:hover .circle2 {
+.svgexample1:hover .circle1,
+.svgexample1:hover .circle2
+ {
     transform-origin: 50% 50%;
-    animation: circleGrowth ease-out 500ms;
+    animation: circleGrowth ease-out infinite 500ms;
 }
 
 @keyframes circleGrowth {
     0% { transform: scale(1, 1);}
     50% {
-        transform: scale(1.5, 1.5);}
+        transform: scale(1.5, 1.5);
+    stroke: blue;
+stroke-width: 20}
     100% {
         transform: scaleX(1, 1);}
+    
+}
+
+.svgexample1:hover .line1,
+.svgexample1:hover .line2 {
+    animation: lineGrowth ease-out infinite 500ms;
+}
+
+@keyframes lineGrowth {
+    0% { stroke-width: 15;}
+    50% {
+        stroke-width: 30;}
+    100% {
+        stroke-width: 15;}
     
 }
