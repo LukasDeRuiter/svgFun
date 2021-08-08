@@ -1,0 +1,13 @@
+.svgexample1:hover .circle2 {
+    transform-origin: 50% 50%;
+    animation: circleGrowth ease-out 500ms;
+}
+
+@keyframes circleGrowth {
+    0% { transform: scale(1, 1);}
+    50% {
+        transform: scale(1.5, 1.5);}
+    100% {
+        transform: scaleX(1, 1);}
+    
+}
