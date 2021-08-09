@@ -1,0 +1,14 @@
+.pokeballsvg{
+    transition-duration: 500ms;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+}
+
+
+.pokeballsvg:hover{
+    transition-duration: 500ms;
+    transform-origin: 50% 50%;
+    transform: scale(1.5, 1.5);
+}
+
+
