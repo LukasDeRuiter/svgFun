@@ -1,9 +1,43 @@
-.eye{
-    transition-duration: 500ms;
-    transform: translateX(0%);
+.faceSvg{
+    transform:scale(1, 1);
+    transition-duration: 100ms;
+    animation: dance 2.5s infinite;
 }
 
-.eye:hover{
-    transition-duration: 500ms;
-    transform: translateX(10%);
+.faceSvg:hover{
+    transform:skew(20deg, 20deg);
+    transition-duration: 100ms;
+}
+
+.eye{
+    animation: eyebrowMove 3s infinite alternate;
+
+}
+
+.eyelid{
+    animation: eyebrowMove 3s infinite alternate;
+}
+
+.eyebrow{
+    animation: eyebrowMove 3s infinite alternate;
+}
+
+.mouth{
+    animation: eyebrowMove 3s infinite alternate;
+}
+
+
+@keyframes eyebrowMove{
+    0% {transform: translateY(0%);}
+    50% {transform: translateY(3%);}
+    100% {transform: translateY(0%);}
+}
+
+@keyframes dance{
+    0% {transform: skew(0deg, 0deg);}
+    25% {transform: skew(2deg, 20deg);}
+    50% {transform: skew(0deg, 0deg);}
+    75% {transform: skew(-2deg, -20deg);}
+    100% {transform: skew(0deg, 0deg);}
+
 }
