@@ -1,0 +1,9 @@
+.eye{
+    transition-duration: 500ms;
+    transform: translateX(0%);
+}
+
+.eye:hover{
+    transition-duration: 500ms;
+    transform: translateX(10%);
+}
