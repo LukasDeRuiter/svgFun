@@ -5,7 +5,7 @@
 }
 
 .faceSvg:hover{
-    transform:skew(20deg, 20deg);
+    transform:scale(3, 3);
     transition-duration: 100ms;
 }
 
